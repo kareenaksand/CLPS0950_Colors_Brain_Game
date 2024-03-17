@@ -6,3 +6,4 @@ reverseRedimageData_double(:, :, 2) = red_blue_channel; % Set red channel as blu
 reverseRedimageData_double(:, :, 2) = red_red_channel; % Set blue channel as red
 figure
 imshow(reverseRedimageData_double);
+imwrite(reverseRedimageData_double, 'reverse_red_image.jpg');

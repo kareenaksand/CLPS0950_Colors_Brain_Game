@@ -1,0 +1,6 @@
+darkerBlueimageData = imread('blue_image.jpg');
+darkerBlueimageData_double = im2double(darkerBlueimageData);
+Bluedarkening_factor = 0.7; % Adjust this value to control the darkness
+Bluedarkened_image = max(darkerBlueimageData_double * Bluedarkening_factor, 0); % Ensure values are within valid range
+imshow(Bluedarkened_image);
+imwrite(darkened_image, 'darkened_image.jpg');
