@@ -4,5 +4,8 @@ GreenimageURL= ['https://drive.google.com/uc?id=',GreenfileID];
 Greenfilename= 'green_image.png';
 websave(Greenfilename, GreenimageURL);
 GreenimageData = imread(Greenfilename);
+targetWidth = 500;
+targetHeight = 300;
+resized_green = imresize(GreenimageData, [targetHeight, targetWidth]);
 figure
-imshow(GreenimageData);
+imshow(resized_green);

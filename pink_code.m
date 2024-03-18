@@ -7,5 +7,8 @@ pinkfilename = 'pink_image.jpg';
 websave(pinkfilename, pinkimageURL);
 
 pinkimageData = imread(pinkfilename);
+targetWidth = 500;
+targetHeight = 300;
+resized_pink = imresize(pinkimageData, [targetHeight, targetWidth]);
 figure
-imshow(pinkimageData);
+imshow(resized_pink);

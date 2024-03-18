@@ -7,5 +7,8 @@ Yellowfilename = 'yellow_image.jpg';
 websave(Yellowfilename, YellowimageURL);
 
 YellowimageData = imread(Yellowfilename);
-
-imshow(YellowimageData);
+targetWidth = 500;
+targetHeight = 300;
+resized_yellow = imresize(YellowimageData, [targetHeight, targetWidth]);
+figure
+imshow(resized_yellow);
