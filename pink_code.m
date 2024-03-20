@@ -12,3 +12,4 @@ targetHeight = 300;
 resized_pink = imresize(pinkimageData, [targetHeight, targetWidth]);
 figure
 imshow(resized_pink);
+imwrite(resized_pink, 'resized_pink.jpg');

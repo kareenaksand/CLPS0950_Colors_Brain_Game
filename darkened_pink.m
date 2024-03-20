@@ -8,3 +8,4 @@ targetHeight = 300;
 resized_darkened_pink = imresize(Pinkdarkened_image, [targetHeight, targetWidth]);
 figure
 imshow(resized_darkened_pink);
+imwrite(resized_darkened_pink, 'resized_darkened_pink.jpg');

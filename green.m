@@ -9,3 +9,4 @@ targetHeight = 300;
 resized_green = imresize(GreenimageData, [targetHeight, targetWidth]);
 figure
 imshow(resized_green);
+imwrite(resized_green, 'resized_green.jpg');

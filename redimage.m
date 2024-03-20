@@ -9,3 +9,4 @@ targetHeight = 300;
 resized_red = imresize(RedimageData, [targetHeight, targetWidth]);
 figure
 imshow(resized_red);
+imwrite(resized_red, 'resized_red.jpg');

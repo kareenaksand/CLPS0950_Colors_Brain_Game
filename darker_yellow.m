@@ -8,3 +8,4 @@ targetHeight = 300;
 resized_dark_yellow = imresize(Yellowdarkened_image, [targetHeight, targetWidth]);
 figure
 imshow(resized_dark_yellow);
+imwrite(resized_dark_yellow, 'resized_dark_yellow.jpg');

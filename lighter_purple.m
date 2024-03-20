@@ -7,3 +7,4 @@ targetHeight = 300;
 resized_light_purple = imresize(lighterPurpleimageData_double, [targetHeight, targetWidth]);
 figure
 imshow(resized_light_purple);
+imwrite(resized_light_purple, 'resized_light_purple.jpg');

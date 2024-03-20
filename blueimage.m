@@ -12,3 +12,4 @@ targetHeight = 300;
 resized_blue = imresize(BlueimageData, [targetHeight, targetWidth]);
 figure
 imshow(resized_blue);
+imwrite(resized_blue, 'resized_blue.jpg');
